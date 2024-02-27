@@ -12,13 +12,20 @@ class Calculator:
         if self.operator == "-":
             return self.firstNum - self.secondNum
         
-def multiplyNum(self) -> int:
-        if self.operator == "*":
-            return self.firstNum * self.secondNum
-        
-def divideNum(self) -> int:
-        if self.operator == "/":
-            return self.firstNum / self.secondNum
+    def multiplyNum(self) -> int:
+            if self.operator == "*":
+                return self.firstNum * self.secondNum
+            
+    def divideNum(self) -> int:
+            if self.operator == "/":
+                return self.firstNum / self.secondNum
 
-calcObj = Calculator(5,4,"-")
-print(calcObj.subtractNum())
+    def raiseToPowNum(self) -> int:
+            if self.operator == "^":
+                return self.firstNum ** self.secondNum
+    def toPercentPowNum(self) -> int:
+            if self.operator == "%":
+                return self.firstNum / 100
+
+calcObj = Calculator(2,2,"^")
+print(calcObj.raisePowNum())
